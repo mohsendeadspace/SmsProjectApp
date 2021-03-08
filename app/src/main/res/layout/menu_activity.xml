@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dashbord">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary"
+        app:elevation="15dp"
+        >
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view2"
+        android:layout_alignParentBottom="true">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/message"
+            android:id="@+id/fab"
+            android:layout_margin="20dp"
+            android:layout_gravity="left|bottom"
+            app:elevation="12dp"
+            app:rippleColor="#2196f3">
+
+        </android.support.design.widget.FloatingActionButton>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:rippleColor="#fafdff"
+        android:id="@+id/cardone"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="کولر"
+            android:id="@+id/txtcardone"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgcardone"
+            android:layout_marginLeft="47dp"
+            android:layout_gravity="center"
+            android:src="@drawable/coolertwo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:rippleColor="#fafdff"
+        android:layout_marginRight="5dp"
+        android:id="@+id/cardtwo"
+        android:layout_above="@+id/cardthree"
+        android:layout_toEndOf="@+id/cardone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="هود"
+            android:id="@+id/txtcardtwo"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgcardtwo"
+            android:layout_gravity="center"
+            android:layout_marginRight="47dp"
+            android:src="@drawable/hoodtwo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:rippleColor="#fafdff"
+        android:id="@+id/cardthree"
+        android:layout_below="@+id/cardone"
+        android:layout_alignStart="@+id/cardtseven">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="پرده"
+            android:id="@+id/txtcarthree"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgcarthree"
+            android:layout_gravity="center"
+            android:layout_marginRight="47dp"
+            android:src="@drawable/pardetwo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:rippleColor="#fafdff"
+        android:layout_marginLeft="5dp"
+
+       android:layout_marginRight="20dp"
+        android:id="@+id/cardfour"
+        android:layout_below="@+id/cardtseven"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="پریز"
+            android:id="@+id/txtcardfour"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgcardfour"
+            android:layout_gravity="center"
+            android:layout_marginRight="47dp"
+            android:src="@drawable/priztwo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:rippleColor="#fafdff"
+        android:layout_marginRight="5dp"
+        android:id="@+id/cardtfive"
+        android:layout_below="@+id/cardthree"
+        android:layout_alignStart="@+id/cardtseven">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="لامپ"
+            android:id="@+id/txtcarfive"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgcarfive"
+            android:layout_marginLeft="43dp"
+            android:layout_gravity="center"
+            android:src="@drawable/lighttwo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:rippleColor="#fafdff"
+        android:id="@+id/cardteight"
+        android:layout_below="@+id/cardtfive"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="دما"
+            android:id="@+id/txtcareight"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="43dp"
+            android:id="@+id/imgcareight"
+            android:layout_gravity="center"
+            android:src="@drawable/damatwo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:rippleColor="#fafdff"
+        android:id="@+id/cardtseven"
+        android:layout_below="@+id/cardteight"
+        android:layout_alignStart="@+id/cardfour">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="گاز"
+            android:id="@+id/txtcarseven"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgcarseven"
+            android:layout_marginLeft="47dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gaztwo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:rippleColor="#fafdff"
+
+
+
+        android:id="@+id/cardtsix"
+        android:layout_below="@+id/cardfour"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="آیفون"
+            android:id="@+id/txtcarsix"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgcarsix"
+            android:layout_gravity="center"
+            android:layout_marginLeft="47dp"
+            android:src="@drawable/ipone"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

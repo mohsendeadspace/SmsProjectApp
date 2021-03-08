@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bagaz">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary"
+        app:elevation="15dp"
+        >
+    </android.support.v7.widget.Toolbar>
+
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gaz1"
+        android:text="G_open"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/shape_button"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gaz2"
+        android:text="G_close"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_button"
+        android:layout_below="@+id/gaz1"
+        android:layout_alignStart="@+id/gaz1" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/note"
+        android:id="@+id/statecb"
+        android:layout_marginBottom="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

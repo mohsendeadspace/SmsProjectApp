@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/ifone"
+    >
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:id="@+id/lamp1"
+        android:background="@drawable/lightbulb"
+        android:layout_marginTop="99dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignStart="@+id/lamp3" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:id="@+id/lamp2"
+        android:background="@drawable/lightbulb"
+        android:layout_above="@+id/lamp4"
+        android:layout_alignStart="@+id/lamp4" />
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary"
+        app:elevation="15dp"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:id="@+id/lamp3"
+        android:background="@drawable/lightbulb"
+        android:layout_below="@+id/lamp1"
+        android:layout_toStartOf="@+id/statelamp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:id="@+id/lamp4"
+        android:background="@drawable/lightbulb"
+        android:layout_above="@+id/statelamp"
+        android:layout_toEndOf="@+id/statelamp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/statelamp"
+        android:layout_below="@+id/lamp3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/note" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/aboutUs" android:title="درباره ما"></item>
+    <item android:id="@+id/email" android:title="ارتباط با ما"></item>
+    <item android:id="@+id/exit" android:title="خروج از برنامه"></item>
+</menu>
